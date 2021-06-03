@@ -86,21 +86,6 @@ $routes->add('error/403', 'Errors\show_403', ['as' => 'show_403']);
 /** routing web pages */
 $routes->add('/', 'Web\Home::index');
 $routes->add('/home', 'Web\Home::index', ['as' => 'home']);
-$routes->add('/business-in-dubai', 'Web\BusinessDubai::index', ['as' => 'business_dubai']);
-$routes->add('/residency-in-EU', 'Web\ResidencyEu::index', ['as' => 'residency_eu']);
-$routes->add('/greece', 'Web\Greece::index', ['as' => 'greece']);
-$routes->add('/republic-of-cyprus', 'Web\RepublicCyprus::index', ['as' => 'republic_cyprus']);
-$routes->add('/slovakia', 'Web\Slovakia::index', ['as' => 'slovakia']);
-$routes->add('/citizenship', 'Web\Citizenship::index', ['as' => 'citizenship']);
-$routes->add('/dominica', 'Web\Dominica::index', ['as' => 'dominica']);
-$routes->add('/st-kitts-and-nevis', 'Web\KittsNevis::index', ['as' => 'kitts_nevis']);
-$routes->add('/vanuatu', 'Web\Vanuatu::index', ['as' => 'vanuatu']);
-$routes->add('/st-lucia', 'Web\Lucia::index', ['as' => 'lucia']);
-$routes->add('/canada-immigration', 'Web\CanadaImmigration::index', ['as' => 'canada_immigration']);
-$routes->add('/contact-us', 'Web\ContactUs::index', ['as' => 'contact_us']);
-$routes->add('/about-us', 'Web\AboutUs::index', ['as' => 'about_us']);
-$routes->add('/iraq', 'Web\Iraq::index', ['as' => 'iraq']);
-$routes->add('/south-africa', 'Web\SouthAfrica::index', ['as' => 'south_africa']);
 
 
 /*
