@@ -67,7 +67,7 @@ password: password<br/>
 
 ## Hosting Project 
 
-1. Move all files and folder from public for to root<br/>
+1. Move all files and folder from public folder to root<br/>
 2. In index.php change directory path:<br/>
 $pathsPath = realpath(FCPATH . '../app/Config/Paths.php');<br/>
 $pathsPath = realpath(FCPATH . '/app/Config/Paths.php');<br/>
