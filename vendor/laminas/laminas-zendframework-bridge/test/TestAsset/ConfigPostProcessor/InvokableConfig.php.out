@@ -1,0 +1,10 @@
+<?php
+return [
+    'dependencies' => [
+        'invokables' => [
+            'console-helper'                 => 'Laminas\Stdlib\ConsoleHelper',
+            'Some\Custom\ClassName'          => 'Laminas\Stdlib\ConsoleHelper',
+            'Zend\Stdlib\StringWrapper\Intl' => 'Laminas\Stdlib\StringWrapper\Intl',
+        ],
+    ],
+];

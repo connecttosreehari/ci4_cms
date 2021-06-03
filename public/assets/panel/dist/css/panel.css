@@ -1,0 +1,30 @@
+.main-sidebar-logo-holder{
+    display: block;
+    text-align: center; 
+}
+.sidebar-mini.sidebar-collapse  .main-sidebar-logo-holder{
+    margin-left: 0; 
+    -webkit-animation-name: none; 
+    animation-name: none; 
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    visibility: visible;
+    display: block;
+    text-align: center;
+}
+.main-sidebar-logo-holder img{
+    max-width: 130px;
+    width: 100%;
+}
+.direction-ltr{
+    direction: ltr;
+}
+.direction-rtl{
+    direction: rtl;
+}
+.dropdown-menu{
+max-height: 300px;
+overflow-y: auto;
+}

@@ -1,0 +1,54 @@
+<?php
+
+return [
+    'service_manager' => [
+        'abstract_factories' => [
+            'Laminas\ServiceManager\AbstractFactory\ConfigAbstractFactory',
+        ],
+        'aliases' => [
+            'Zend\Cache\Storage\StorageInterface' => 'Laminas\Cache\Storage\StorageInterface',
+            'Laminas\Cache\Storage\StorageInterface' => 'Laminas\Cache\Storage\Adapter\Redis',
+            'Zend\Expressive\Router\RouterInterface' => 'Mezzio\Router\RouterInterface',
+            'Zend\Form\Factory' => 'Laminas\Form\Factory',
+            'Zend\Cache\Storage\Adapter\RedisOptions' => 'Laminas\Cache\Storage\Adapter\RedisOptions',
+        ],
+        'delegators' => [
+            'Laminas\Cache\Storage\Adapter\Redis' => [
+                'Laminas\ServiceManager\Proxy\LazyServiceFactory',
+            ],
+        ],
+        'factories' => [
+            'MyService' => 'Laminas\ServiceManager\Factory\InvokableFactory',
+            'Laminas\Form\Factory' => 'Some\Vendor\Zend\Form\ZendFormFactory',
+        ],
+        'initializers' => [
+            // Just for testing purposes, this initializer does not exist
+            'Laminas\Form\FactoryInitializer',
+        ],
+        'invokables' => [
+            'Mezzio\Router\RouterInterface' => 'MyService',
+        ],
+        'lazy_services' => [
+            'class_map' => [
+                'Laminas\Cache\Storage\Adapter\Redis' => 'Laminas\Cache\Storage\Adapter\Redis',
+            ],
+        ],
+        'services' => [
+            'preferred-cache-storage' => [
+                'name' => 'Laminas\Cache\Storage\Adapter\Redis',
+                'options' => 'Laminas\Cache\Storage\Adapter\RedisOptions',
+            ],
+            'Laminas\Cache\Storage\Adapter\RedisOptions' => [
+                'server' => [
+                    'host' => 'localhost',
+                    'port' => 6379,
+                    'timeout' => 0,
+                ],
+            ],
+        ],
+        'shared' => [
+            'Laminas\Form\Factory' => false,
+        ],
+        'sharedByDefault' => false,
+    ],
+];

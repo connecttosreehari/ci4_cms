@@ -1,0 +1,13 @@
+<?php
+namespace Acelaya\Expressive;
+
+return [
+    'dependencies' => [
+        'factories' => [
+            'Mezzio\Router\RouterInterface' => Factory\SlimRouterFactory::class,
+        ],
+        'aliases' => [
+            'Zend\Expressive\Router\RouterInterface' => 'Mezzio\Router\RouterInterface',
+        ],
+    ],
+];
