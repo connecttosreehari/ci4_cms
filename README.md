@@ -22,6 +22,7 @@ cms.admin.email=''<br/>
 cms.default.lang='en'<br/>
 cms.config.form_management=true<br/>
 cms.smtp.enable=false<br/>
+cms.smtp.host=''<br/>
 cms.smtp.email=''<br/>
 cms.smtp.password=''<br/>
 cms.smtp.port=''<br/>
