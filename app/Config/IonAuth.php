@@ -210,8 +210,8 @@ class IonAuth extends BaseConfig
 
 		// templates for messages
 		'messages' => [
-			'list' => 'common\alerts\message_list',
-			'single' => 'common\alerts\message',
+			'list' => 'common/alerts/message_list',
+			'single' => 'common/alerts/message',
 		],
 	];
 }
