@@ -33,10 +33,10 @@ class Validation
 	 * @var array<string, string>
 	 */
 	public $templates = [
-		'error_list' => 'common\alerts\error_list',
-		'error' => 'common\alerts\error',
-		'message_list' => 'common\alerts\message_list',
-		'message' => 'common\alerts\message',
+		'error_list' => 'common/alerts/error_list',
+		'error' => 'common/alerts/error',
+		'message_list' => 'common/alerts/message_list',
+		'message' => 'common/alerts/message',
 	];
 
 	//--------------------------------------------------------------------
