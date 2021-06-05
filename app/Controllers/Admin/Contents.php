@@ -699,9 +699,8 @@ class Contents extends AdminController
 					}
 					if ($file->isValid() && !$file->hasMoved()) {																	
 						$ext = $file->getClientExtension();
-						$file_name = $file->getRandomName();
-						$file->move('uploads', $file_name);
-						$image = $this->image_lib->withFile('uploads/' . $file_name);
+						$file_name = $file->getRandomName();						
+						$image = $this->image_lib->withFile($file);
 						if ($allow_resize == 1) {
 							$image->resize($width, $height, false, 'height');
 						}
