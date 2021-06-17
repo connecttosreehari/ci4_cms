@@ -14,6 +14,7 @@
     </section>
     <!-- Main content -->
     <section class="content">
+        <?= $alert_msg ?>
         <!-- Default box -->
         <div class="card card-primary">
             <?php if (!empty($content_subtitle)) : ?>
