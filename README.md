@@ -1,5 +1,5 @@
 # CI4 CMS
-CI4 CMS is a semi-content management system created using CodeIgniter 4 Framework, it is useful for manage the content of small websites that have Home, About Us, Service, Projects, Contact Us, etc.. pages.
+CI4 CMS is a semi-content management system built on the robust CodeIgniter 4 Framework. It is tailored for managing the content of small websites that typically feature pages such as Home, About Us, Services, Projects, and Contact Us. This CMS provides a streamlined solution for creating, editing, and organizing content across these pages, offering simplicity and flexibility suited to the needs of smaller-scale web projects. Its integration with CodeIgniter 4 ensures reliable performance and scalability, making it an efficient choice for maintaining and updating content-driven websites.
 
 ### Installation 
 
